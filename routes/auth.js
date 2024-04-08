@@ -2,14 +2,14 @@ const { Router } = require('express'); // Importa la función Router de
 // express para crear un router 
 const router = Router(); // Crea una instancia de Router 
 
-const { login } = require('../controllers/auth'); // Importa el controlador 
+const { login } = require('../controllers/authController'); // Importa el controlador 
 // login desde el archivo '../controllers/auth' 
  
 // Define una ruta POST '/login' que utilizará el controlador login 
 router.post('/login', login); 
  
 const { usuariosGet, usuariosPost, usuariosPut, usuariosDelete, PromGet } = 
-require('../controllers/usuario'); // Importa los controladores desde el 
+require('../controllers/user____Controller'); // Importa los controladores desde el 
 // archivo '../controllers/usuario' 
  
 // Define rutas y asigna controladores a cada ruta 
